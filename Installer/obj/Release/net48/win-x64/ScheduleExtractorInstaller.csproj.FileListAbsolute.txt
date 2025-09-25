@@ -1,0 +1,12 @@
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\bin\Release\net48\win-x64\ScheduleExtractorInstaller.exe.config
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\bin\Release\net48\win-x64\ScheduleExtractorInstaller.exe
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\bin\Release\net48\win-x64\ScheduleExtractorInstaller.pdb
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\bin\Release\net48\win-x64\Newtonsoft.Json.dll
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\ScheduleExtractorInstaller.csproj.AssemblyReference.cache
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\ScheduleExtractorInstaller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\ScheduleExtractorInstaller.AssemblyInfoInputs.cache
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\ScheduleExtractorInstaller.AssemblyInfo.cs
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\ScheduleExtractorInstaller.csproj.CoreCompileInputs.cache
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\Schedule.6E12FEE9.Up2Date
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\ScheduleExtractorInstaller.exe
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\Installer\obj\Release\net48\win-x64\ScheduleExtractorInstaller.pdb

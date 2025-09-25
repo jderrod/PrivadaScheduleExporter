@@ -1,0 +1,56 @@
+[
+  {
+    "Privada_Panel": "component_ID",
+    "panel_width": "panel_width",
+    "panel_height": "panel_height",
+    "panel_type": "panel_type",
+    "panel_configuration": "panel_configuration",
+    "panel_thickness": "panel_thickness",
+    "panel_floor_clearance": "panel_floor_clearance"
+  },
+  {
+    "Privada_Panel": "P1",
+    "panel_width": "39.500\"",
+    "panel_height": "96.000\"",
+    "panel_type": "external",
+    "panel_configuration": "Joint Internal Fascia Panel",
+    "panel_thickness": "1.000\"",
+    "panel_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Panel": "P2",
+    "panel_width": "39.500\"",
+    "panel_height": "96.000\"",
+    "panel_type": "external",
+    "panel_configuration": "Internal",
+    "panel_thickness": "1.000\"",
+    "panel_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Panel": "P3",
+    "panel_width": "39.500\"",
+    "panel_height": "96.000\"",
+    "panel_type": "external",
+    "panel_configuration": "Internal",
+    "panel_thickness": "1.000\"",
+    "panel_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Panel": "P4",
+    "panel_width": "39.500\"",
+    "panel_height": "96.000\"",
+    "panel_type": "external",
+    "panel_configuration": "Internal",
+    "panel_thickness": "1.000\"",
+    "panel_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Panel": "P5",
+    "panel_width": "39.500\"",
+    "panel_height": "96.000\"",
+    "panel_type": "external",
+    "panel_configuration": "External/Flush Corner",
+    "panel_thickness": "1.000\"",
+    "panel_floor_clearance": "4.000\""
+  }
+]

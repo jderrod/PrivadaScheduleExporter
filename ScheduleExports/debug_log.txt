@@ -1,0 +1,98 @@
+=== Schedule Export Debug Log - 9/22/2025 11:54:03 AM ===
+Document: C:\Users\james.derrod\CascadeProjects\schedule-extractor\Test_Project-Privada_Alcove_Corner_Left_V12_2025_09_19.rvt
+
+Found schedule: 'Keynote Legend' - Type: Schedule - Category: -2005029
+  -> Schedule 'Keynote Legend' has 2 rows and 2 columns
+  -> Headers for 'Keynote Legend': Keynote Legend, Keynote Text
+    Row 0: ['Key Value', 'Keynote Text'] - HasData: True
+    Row 1: ['', ''] - HasData: False
+  -> Extracted 1 data rows from 'Keynote Legend'
+
+Found schedule: 'Privada_Door' - Type: Schedule - Category: -2001350
+  -> Schedule 'Privada_Door' has 7 rows and 7 columns
+  -> Headers for 'Privada_Door': Privada_Door, door_width, door_height, door_thickness, door_hinge_side_relative_to_room, door_swing_direction, door_floor_clearance
+    Row 0: ['component_ID', 'door_width', 'door_height', 'door_thickness', 'door_hinge_side_relative_to_room', 'door_swing_direction', 'door_floor_clearance'] - HasData: True
+    Row 1: ['', '', '', '', '', '', ''] - HasData: False
+    Row 2: ['D2', '22.000"', '96.000"', '1.000"', 'Right', 'Out', '4.000"'] - HasData: True
+    Row 3: ['D2', '22.000"', '96.000"', '1.000"', 'Right', 'Out', '4.000"'] - HasData: True
+    Row 4: ['D3', '22.000"', '96.000"', '1.000"', 'Right', 'Out', '4.000"'] - HasData: True
+    Row 5: ['D4', '22.000"', '96.000"', '1.000"', 'Right', 'Out', '4.000"'] - HasData: True
+    Row 6: ['D5', '22.000"', '96.000"', '1.000"', 'Right', 'Out', '4.000"'] - HasData: True
+  -> Extracted 6 data rows from 'Privada_Door'
+
+Found schedule: 'Privada_Panel' - Type: Schedule - Category: -2001350
+  -> Schedule 'Privada_Panel' has 7 rows and 7 columns
+  -> Headers for 'Privada_Panel': Privada_Panel, panel_width, panel_height, panel_type, panel_configuration, panel_thickness, panel_floor_clearance
+    Row 0: ['component_ID', 'panel_width', 'panel_height', 'panel_type', 'panel_configuration', 'panel_thickness', 'panel_floor_clearance'] - HasData: True
+    Row 1: ['', '', '', '', '', '', ''] - HasData: False
+    Row 2: ['P1', '39.500"', '96.000"', 'external', 'Joint Internal Fascia Panel', '1.000"', '4.000"'] - HasData: True
+    Row 3: ['P2', '39.500"', '96.000"', 'external', 'Internal', '1.000"', '4.000"'] - HasData: True
+    Row 4: ['P3', '39.500"', '96.000"', 'external', 'Internal', '1.000"', '4.000"'] - HasData: True
+    Row 5: ['P4', '39.500"', '96.000"', 'external', 'Internal', '1.000"', '4.000"'] - HasData: True
+    Row 6: ['P5', '39.500"', '96.000"', 'external', 'External/Flush Corner', '1.000"', '4.000"'] - HasData: True
+  -> Extracted 6 data rows from 'Privada_Panel'
+
+Found schedule: 'Privada_Head_Rail' - Type: Schedule - Category: -2001350
+  -> Schedule 'Privada_Head_Rail' has 9 rows and 3 columns
+  -> Headers for 'Privada_Head_Rail': Privada_Head_Rail, head_rail_width, head_rail_length
+    Row 0: ['Family', 'head_rail_width', 'head_rail_length'] - HasData: True
+    Row 1: ['', '', ''] - HasData: False
+    Row 2: ['Privada-Head_rail', '2.000"', '80.000"'] - HasData: True
+    Row 3: ['Privada-Head_rail', '1.000"', '31.000"'] - HasData: True
+    Row 4: ['Privada-Head_rail', '1.000"', '31.000"'] - HasData: True
+    Row 5: ['Privada-Head_rail', '1.000"', '30.000"'] - HasData: True
+    Row 6: ['Privada-Head_rail', '1.000"', '31.500"'] - HasData: True
+    Row 7: ['Privada-Head_rail', '1.000"', '39.500"'] - HasData: True
+    Row 8: ['Privada-Head_rail: 6', '', ''] - HasData: True
+  -> Extracted 8 data rows from 'Privada_Head_Rail'
+
+Found schedule: 'Privada_Pedestal' - Type: Schedule - Category: -2001350
+  -> Schedule 'Privada_Pedestal' has 5 rows and 2 columns
+  -> Headers for 'Privada_Pedestal': Privada_Pedestal, pedestal_height
+    Row 0: ['Family', 'pedestal_height'] - HasData: True
+    Row 1: ['', ''] - HasData: False
+    Row 2: ['Privada-Pedestal', '4.000"'] - HasData: True
+    Row 3: ['7', ''] - HasData: True
+    Row 4: ['Privada-Pedestal: 7', ''] - HasData: True
+  -> Extracted 4 data rows from 'Privada_Pedestal'
+
+Found schedule: 'Privada_Fascia' - Type: Schedule - Category: -2001350
+  -> Schedule 'Privada_Fascia' has 9 rows and 11 columns
+  -> Headers for 'Privada_Fascia': Privada_Fascia, fascia_width, fascia_height, fascia_thickness, fascia_attachment, edge_attachment, hardware_attachment, fascia_left_edge, fascia_right_edge, fascia_left_edge_door_floor_clearance, fascia_right_edge_door_floor_clearance
+    Row 0: ['ID', 'width', 'height', 'thickness', 'fascia_attachment', 'edge_attachment', 'hardware_attachment', 'left_edge', 'right_edge', 'left_edge_door_floor_clearance', 'right_edge_door_floor_clearance'] - HasData: True
+    Row 1: ['', '', '', '', '', '', '', '', '', '', ''] - HasData: False
+    Row 2: ['S1', '4.000"', '96.000"', '1.000"', 'internal_panel', 'None + RH Keeper Inswing', 'Alcove Open', 'wall', 'keeping', '4"', '4"'] - HasData: True
+    Row 3: ['S2', '14.500"', '96.000"', '1.000"', 'internal_panel', 'RH Hinge Inswing + None', 'None', 'hinging', 'wall', '4"', '4"'] - HasData: True
+    Row 4: ['S3', '4.000"', '96.000"', '1.000"', 'internal_panel', 'None + RH Keeper Outswing', 'None', 'wall', 'keeping', '4"', '4"'] - HasData: True
+    Row 5: ['S4', '9.000"', '96.000"', '1.000"', 'internal_panel', 'RH Hinge Outswing + RH Keeper Outswing', 'None/Internal Panel', 'hinging', 'keeping', '4"', '4"'] - HasData: True
+    Row 6: ['S5', '9.000"', '96.000"', '1.000"', 'internal_panel', 'RH Hinge Outswing + RH Keeper Outswing', 'None/Internal Panel', 'hinging', 'keeping', '4"', '4"'] - HasData: True
+    Row 7: ['S6', '5.000"', '96.000"', '1.000"', 'internal_panel', 'RH Hinge Outswing + RH Keeper Outswing', 'None/Internal Panel', 'hinging', 'keeping', '4"', '4"'] - HasData: True
+    Row 8: ['S7', '5.000"', '96.000"', '1.000"', 'internal_panel', 'RH Hinge Outswing + RH Keeper Inswing', 'Wall/External Panel', 'hinging', 'corner', '4"', '4"'] - HasData: True
+  -> Extracted 8 data rows from 'Privada_Fascia'
+
+Found schedule: 'Head_Rails_Segments' - Type: Schedule - Category: -2001350
+  -> Schedule 'Head_Rails_Segments' has 3 rows and 4 columns
+  -> Headers for 'Head_Rails_Segments': Head_Rails_Segments, 1"_Head_rail_120"_segments, 2"_head_rail_total_length, 2"_Head_rail_120"_segments
+    Row 0: ['1"_head_rail_total_length', '1"_head_rail_120"_segments', '2"_head_rail_total_length', '2"_head_rail_120"_segments'] - HasData: True
+    Row 1: ['', '', '', ''] - HasData: False
+    Row 2: ['163.500"', '2', '80.000"', '1'] - HasData: True
+  -> Extracted 2 data rows from 'Head_Rails_Segments'
+
+Found schedule: 'Privada Reports 1' - Type: Schedule - Category: -2001350
+  -> Schedule 'Privada Reports 1' has 2 rows and 7 columns
+  -> Headers for 'Privada Reports 1': Privada Reports 1, stall_1_S6_report, stall_1_S7_report, stall_2_S1_report, stall_2_S2_report, stall_3_S2_report, stall_3_S3_report
+    Row 0: ['stall_1_D1_report', 'stall_1_S6_report', 'stall_1_S7_report', 'stall_2_S1_report', 'stall_2_S2_report', 'stall_3_S2_report', 'stall_3_S3_report'] - HasData: True
+    Row 1: ['', '', '', '', '', '', ''] - HasData: False
+  -> Extracted 1 data rows from 'Privada Reports 1'
+
+Found schedule: 'Privada Reports 2' - Type: Schedule - Category: -2001350
+  -> Schedule 'Privada Reports 2' has 2 rows and 6 columns
+  -> Headers for 'Privada Reports 2': Privada Reports 2, stall_4_S4_report, stall_5_S4_report, stall_5_S5_report, stall_width_report, toilet_bowl_report
+    Row 0: ['stall_4_S3_report', 'stall_4_S4_report', 'stall_5_S4_report', 'stall_5_S5_report', 'stall_width_report', 'toilet_bowl_report'] - HasData: True
+    Row 1: ['', '', '', '', '', ''] - HasData: False
+  -> Extracted 1 data rows from 'Privada Reports 2'
+
+
+=== SUMMARY ===
+Total schedules found: 9
+Successfully exported: 9

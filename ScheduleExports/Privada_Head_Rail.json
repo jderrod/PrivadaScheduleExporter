@@ -1,0 +1,41 @@
+[
+  {
+    "Privada_Head_Rail": "Family",
+    "head_rail_width": "head_rail_width",
+    "head_rail_length": "head_rail_length"
+  },
+  {
+    "Privada_Head_Rail": "Privada-Head_rail",
+    "head_rail_width": "2.000\"",
+    "head_rail_length": "80.000\""
+  },
+  {
+    "Privada_Head_Rail": "Privada-Head_rail",
+    "head_rail_width": "1.000\"",
+    "head_rail_length": "31.000\""
+  },
+  {
+    "Privada_Head_Rail": "Privada-Head_rail",
+    "head_rail_width": "1.000\"",
+    "head_rail_length": "31.000\""
+  },
+  {
+    "Privada_Head_Rail": "Privada-Head_rail",
+    "head_rail_width": "1.000\"",
+    "head_rail_length": "30.000\""
+  },
+  {
+    "Privada_Head_Rail": "Privada-Head_rail",
+    "head_rail_width": "1.000\"",
+    "head_rail_length": "31.500\""
+  },
+  {
+    "Privada_Head_Rail": "Privada-Head_rail",
+    "head_rail_width": "1.000\"",
+    "head_rail_length": "39.500\""
+  },
+  {
+    "head_rail_quantity": 6,
+    "family_name": "Privada-Head_rail"
+  }
+]

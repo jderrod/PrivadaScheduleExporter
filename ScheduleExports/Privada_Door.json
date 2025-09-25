@@ -1,0 +1,56 @@
+[
+  {
+    "Privada_Door": "component_ID",
+    "door_width": "door_width",
+    "door_height": "door_height",
+    "door_thickness": "door_thickness",
+    "door_hinge_side_relative_to_room": "door_hinge_side_relative_to_room",
+    "door_swing_direction": "door_swing_direction",
+    "door_floor_clearance": "door_floor_clearance"
+  },
+  {
+    "Privada_Door": "D2",
+    "door_width": "22.000\"",
+    "door_height": "96.000\"",
+    "door_thickness": "1.000\"",
+    "door_hinge_side_relative_to_room": "Right",
+    "door_swing_direction": "Out",
+    "door_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Door": "D2",
+    "door_width": "22.000\"",
+    "door_height": "96.000\"",
+    "door_thickness": "1.000\"",
+    "door_hinge_side_relative_to_room": "Right",
+    "door_swing_direction": "Out",
+    "door_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Door": "D3",
+    "door_width": "22.000\"",
+    "door_height": "96.000\"",
+    "door_thickness": "1.000\"",
+    "door_hinge_side_relative_to_room": "Right",
+    "door_swing_direction": "Out",
+    "door_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Door": "D4",
+    "door_width": "22.000\"",
+    "door_height": "96.000\"",
+    "door_thickness": "1.000\"",
+    "door_hinge_side_relative_to_room": "Right",
+    "door_swing_direction": "Out",
+    "door_floor_clearance": "4.000\""
+  },
+  {
+    "Privada_Door": "D5",
+    "door_width": "22.000\"",
+    "door_height": "96.000\"",
+    "door_thickness": "1.000\"",
+    "door_hinge_side_relative_to_room": "Right",
+    "door_swing_direction": "Out",
+    "door_floor_clearance": "4.000\""
+  }
+]
