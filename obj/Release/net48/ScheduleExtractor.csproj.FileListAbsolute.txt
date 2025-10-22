@@ -7,3 +7,4 @@ C:\Users\james.derrod\CascadeProjects\schedule-extractor\obj\Release\net48\Sched
 C:\Users\james.derrod\CascadeProjects\schedule-extractor\obj\Release\net48\Schedule.E1CA561D.Up2Date
 C:\Users\james.derrod\CascadeProjects\schedule-extractor\obj\Release\net48\ScheduleExtractor.dll
 C:\Users\james.derrod\CascadeProjects\schedule-extractor\obj\Release\net48\ScheduleExtractor.pdb
+C:\Users\james.derrod\CascadeProjects\schedule-extractor\obj\Release\net48\ScheduleExtractor.sourcelink.json

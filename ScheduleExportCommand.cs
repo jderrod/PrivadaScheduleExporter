@@ -98,6 +98,9 @@ namespace ScheduleExtractor
                             // Clean the data (remove header row and fix column names)
                             var cleanedData = CleanScheduleData(scheduleData);
                             
+                            // Apply value mappings to convert values to codes
+                            cleanedData = ApplyValueMappings(cleanedData);
+                            
                             // Add to combined data if it's one of the target schedules
                             if (allTargetSchedules.Contains(schedule.Name))
                             {
@@ -526,6 +529,85 @@ namespace ScheduleExtractor
             {
                 System.Diagnostics.Debug.WriteLine($"Error cleaning schedule data: {ex.Message}");
                 return originalData; // Return original data if cleaning fails
+            }
+        }
+
+        private List<Dictionary<string, object>> ApplyValueMappings(List<Dictionary<string, object>> data)
+        {
+            try
+            {
+                if (data == null || data.Count == 0)
+                    return data;
+
+                // Define mappings for hardware_attachment
+                var hardwareAttachmentMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+                {
+                    { "Alcove Closed", "ALC" },
+                    { "Alcove Open", "ALO" },
+                    { "None/Internal Panel", "N" },
+                    { "Wall/External Panel", "W" }
+                };
+
+                // Define mappings for edge_attachment
+                var edgeAttachmentMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+                {
+                    { "RH Hinge Inswing + LH Hinge Inswing", "HIHI" },
+                    { "RH Hinge Inswing + LH Hinge Outswing", "HIHO" },
+                    { "RH Hinge Inswing + RH Keeper Inswing", "HIKI" },
+                    { "RH Hinge Inswing + RH Keeper Outswing", "HIKO" },
+                    { "RH Hinge Inswing + None", "HIN" },
+                    { "RH Hinge Outswing + LH Hinge Inswing", "HOHI" },
+                    { "RH Hinge Outswing + LH Hinge Outswing", "HOHO" },
+                    { "RH Hinge Outswing + RH Keeper Inswing", "HOKI" },
+                    { "RH Hinge Outswing + RH Keeper Outswing", "HOKO" },
+                    { "RH Hinge Outswing + None", "HON" },
+                    { "LH Keeper Inswing + LH Hinge Inswing", "KIHI" },
+                    { "LH Keeper Inswing + LH Hinge Outswing", "KIHO" },
+                    { "LH Keeper Inswing + RH Keeper Inswing", "KIKI" },
+                    { "LH Keeper Inswing + RH Keeper Outswing", "KIKO" },
+                    { "LH Keeper Inswing + None", "KIN" },
+                    { "LH Keeper Outswing + LH Hinge Inswing", "KOHI" },
+                    { "LH Keeper Outswing + LH Hinge Outswing", "KOHO" },
+                    { "LH Keeper Outswing + RH Keeper Inswing", "KOKI" },
+                    { "LH Keeper Outswing + RH Keeper Outswing", "KOKO" },
+                    { "LH Keeper Outswing + None", "KON" },
+                    { "None + LH Hinge Inswing", "NHI" },
+                    { "None + LH Hinge Outswing", "NHO" },
+                    { "None + RH Keeper Inswing", "NKI" },
+                    { "None + RH Keeper Outswing", "NKO" },
+                    { "None + None", "NN" }
+                };
+
+                // Apply mappings to each row
+                foreach (var row in data)
+                {
+                    // Map hardware_attachment values
+                    if (row.ContainsKey("hardware_attachment"))
+                    {
+                        var value = row["hardware_attachment"]?.ToString() ?? "";
+                        if (hardwareAttachmentMap.ContainsKey(value))
+                        {
+                            row["hardware_attachment"] = hardwareAttachmentMap[value];
+                        }
+                    }
+
+                    // Map edge_attachment values
+                    if (row.ContainsKey("edge_attachment"))
+                    {
+                        var value = row["edge_attachment"]?.ToString() ?? "";
+                        if (edgeAttachmentMap.ContainsKey(value))
+                        {
+                            row["edge_attachment"] = edgeAttachmentMap[value];
+                        }
+                    }
+                }
+
+                return data;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error applying value mappings: {ex.Message}");
+                return data; // Return original data if mapping fails
             }
         }
 
