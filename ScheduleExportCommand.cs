@@ -578,6 +578,17 @@ namespace ScheduleExtractor
                     { "None + None", "NN" }
                 };
 
+                // Define mappings for panel_configuration
+                var panelConfigurationMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+                {
+                    { "Internal", "INT" },
+                    { "External/Flush Corner", "EXT" },
+                    { "Joint", "JNT" },
+                    { "Joint External Fascia Panel", "JNT ET FP" },
+                    { "Joint Internal Fascia Panel", "JNT IT FP" },
+                    { "Ambulatory", "AMB" }
+                };
+
                 // Apply mappings to each row
                 foreach (var row in data)
                 {
@@ -598,6 +609,16 @@ namespace ScheduleExtractor
                         if (edgeAttachmentMap.ContainsKey(value))
                         {
                             row["edge_attachment"] = edgeAttachmentMap[value];
+                        }
+                    }
+
+                    // Map panel_configuration values
+                    if (row.ContainsKey("panel_configuration"))
+                    {
+                        var value = row["panel_configuration"]?.ToString() ?? "";
+                        if (panelConfigurationMap.ContainsKey(value))
+                        {
+                            row["panel_configuration"] = panelConfigurationMap[value];
                         }
                     }
                 }
