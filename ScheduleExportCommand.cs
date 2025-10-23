@@ -545,6 +545,7 @@ namespace ScheduleExtractor
                     { "Alcove Closed", "ALC" },
                     { "Alcove Open", "ALO" },
                     { "None/Internal Panel", "N" },
+                    { "None", "N" },
                     { "Wall/External Panel", "W" }
                 };
 
@@ -596,9 +597,16 @@ namespace ScheduleExtractor
                     if (row.ContainsKey("hardware_attachment"))
                     {
                         var value = row["hardware_attachment"]?.ToString() ?? "";
+                        System.Diagnostics.Debug.WriteLine($"MAPPING DEBUG: hardware_attachment original value: '{value}'");
                         if (hardwareAttachmentMap.ContainsKey(value))
                         {
-                            row["hardware_attachment"] = hardwareAttachmentMap[value];
+                            var mappedValue = hardwareAttachmentMap[value];
+                            System.Diagnostics.Debug.WriteLine($"MAPPING DEBUG: hardware_attachment mapped to: '{mappedValue}'");
+                            row["hardware_attachment"] = mappedValue;
+                        }
+                        else
+                        {
+                            System.Diagnostics.Debug.WriteLine($"MAPPING DEBUG: hardware_attachment NOT FOUND in map, keeping original");
                         }
                     }
 
@@ -619,6 +627,41 @@ namespace ScheduleExtractor
                         if (panelConfigurationMap.ContainsKey(value))
                         {
                             row["panel_configuration"] = panelConfigurationMap[value];
+                        }
+                    }
+
+                    // Create asxDoorSwingPriv based on door_hinge_side_relative_to_room and door_swing_direction
+                    if (row.ContainsKey("door_hinge_side_relative_to_room") && row.ContainsKey("door_swing_direction"))
+                    {
+                        var hingeSide = row["door_hinge_side_relative_to_room"]?.ToString() ?? "";
+                        var swingDirection = row["door_swing_direction"]?.ToString() ?? "";
+                        
+                        string asxDoorSwingPriv = "";
+                        
+                        if (hingeSide.Equals("Right", StringComparison.OrdinalIgnoreCase) && 
+                            swingDirection.Equals("Out", StringComparison.OrdinalIgnoreCase))
+                        {
+                            asxDoorSwingPriv = "RO";
+                        }
+                        else if (hingeSide.Equals("Right", StringComparison.OrdinalIgnoreCase) && 
+                                 swingDirection.Equals("In", StringComparison.OrdinalIgnoreCase))
+                        {
+                            asxDoorSwingPriv = "RI";
+                        }
+                        else if (hingeSide.Equals("Left", StringComparison.OrdinalIgnoreCase) && 
+                                 swingDirection.Equals("Out", StringComparison.OrdinalIgnoreCase))
+                        {
+                            asxDoorSwingPriv = "LO";
+                        }
+                        else if (hingeSide.Equals("Left", StringComparison.OrdinalIgnoreCase) && 
+                                 swingDirection.Equals("In", StringComparison.OrdinalIgnoreCase))
+                        {
+                            asxDoorSwingPriv = "LI";
+                        }
+                        
+                        if (!string.IsNullOrEmpty(asxDoorSwingPriv))
+                        {
+                            row["asxDoorSwingPriv"] = asxDoorSwingPriv;
                         }
                     }
                 }
